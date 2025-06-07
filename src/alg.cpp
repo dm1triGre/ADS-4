@@ -1,3 +1,5 @@
+// Copyright 2025 Grechin
+
 int countPairs1(int *arr, int len, int value) {
   int count = 0;
   for (int i = 0; i < len; ++i) {
@@ -37,11 +39,9 @@ int countPairs2(int *arr, int len, int value) {
         right_count++;
       }
       count += left_count * right_count;
-    } 
-    else if (sum < value) {
+    } else if (sum < value) {
       left++;
-    } 
-    else {
+    } else {
       right--;
     }
   }
